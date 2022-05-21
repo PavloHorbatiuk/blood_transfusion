@@ -5,19 +5,20 @@ import App from './App';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
-import Recovery from './routes/RecoveryPage'
-import CloudPage from './routes/CloudPage'
+import DocInfoPage from './routes/DocInfoPage'
 import ContactPage from './routes/ContactPage'
+import InfoDonors from "./components/info-for-donors/InfoDonors";
+import DocInfo from "./components/docinfo/DocInfo";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<App />} />
-      <Route path='/recovery' element={<Recovery />} />
-      <Route path='/cloud' element={<CloudPage />} />
-      <Route path='/contact' element={<ContactPage />} />
-    </Routes>
-  </BrowserRouter>,
-  document.getElementById('root')
+    <BrowserRouter>
+        <Routes>
+            <Route path='/' element={<App/>}/>
+            <Route path='/info_donor' element={<DocInfoPage/>}/>
+            <Route path='/cloud' element={<DocInfoPage/>}/>
+            <Route path='/contact' element={<ContactPage/>}/>
+        </Routes>
+    </BrowserRouter>,
+    document.getElementById('root')
 );
 

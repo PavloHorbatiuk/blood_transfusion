@@ -1,102 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-  --primary-color: #00D9A5;
-  --primary-dark: #0d2154;
+    --primary-color: #00D9A5;
+    --primary-dark: #0d2154;
 }
-span {
-  color: var(--primary-color);
+
+.GreenSpan {
+    color: var(--primary-color);
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: 'Roboto', 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: 'Roboto', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 p {
-  font-size: 1.2rem;
-  line-height: 1.4;
+    font-size: 1.2rem;
+    line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 3rem;
-}
-h4{
-  font-weight: 600;
-  font-size: calc(24px + 0.390625vw);
-  line-height: 31px;
-  color: #000;
-  margin: 20px 0 0;
-  white-space: normal;
+    font-size: 3rem;
 
+}
+
+h4 {
+    font-weight: 600;
+    font-size: calc(24px + 0.390625vw);
+    line-height: 31px;
+    color: #000;
+    margin: 20px 0 0;
+    white-space: normal;
+
+}
+
+h5 {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .container {
-  max-width: 1240px;
-  margin: auto;
-  height: 100%;
-  position: relative;
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    position: relative;
 }
 
 button {
-  font-family: 'Roboto', sans-serif;
-  padding: .7rem 1.5rem;
-  margin: 1rem 0;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  color: #f8f8f8;
-  font-size: 1rem;
-  font-weight: 500;
-  display: flex;
-  border-radius: 4px;
+
+    background: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    padding: .7rem 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid var(--primary-color);
+    color: #f8f8f8;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #47dcff;
-  border: 1px solid #47dcff;
+    background-color:  #62d2a3;
+    border: 1px solid #62d2a2;
 }
 
 @media screen and (max-width: 940px) {
-  h1 {
-    font-size: 2rem;
-  }
+    h1 {
+        font-size: 2rem;
+    }
 
-  h2 {
-    font-size: 2.5rem;
-  }
+    h2 {
+        font-size: 2.5rem;
+    }
 }
 
+@media (max-width: 575px) {
+    h5 {
+        font-size: calc(1rem + 1vw);
+        line-height: 110%;
+    }
+}
 
-
+@media  (max-width: 1023px) {
+    h5 {
+        font-size:  calc(1rem + 1vw);
+        line-height: 110%;
+    }
+}
 
 
 

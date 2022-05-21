@@ -1,8 +1,8 @@
 import React from 'react'
-import Data from './components/data/Data';
+import Steps from './components/Steps/Steps';
 import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
-import Cloud from './components/cloud/Cloud'
+import DocInfo from './components/docinfo/DocInfo'
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Data />
-      <Cloud />
+      <Steps />
+      <DocInfo />
       <Footer />
     </>
   );

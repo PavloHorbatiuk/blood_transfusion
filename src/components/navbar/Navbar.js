@@ -13,12 +13,12 @@ const Navbar = () => {
         <div name='top' className='navbar'>
             <div className="container">
                 <div className="logo">
-                    <img  src={image} alt='logo'/>
+                    <img src={image} alt='logo'/>
                 </div>
 
                 <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
-                    <li><Link to='/'>Інформація донору</Link></li>
-                    <li><Link to='/recovery'>Платні послуги</Link></li>
+                    <li><Link to='/'>На головну</Link></li>
+                    <li><Link to='/info_donor'>Інформація донору</Link></li>
                     <li><Link to='/cloud'>Діяльність</Link></li>
                     <li><Link to='/contact'>Пільги донорам</Link></li>
                     <li><Link to='/links'>Корисні посилання</Link></li>

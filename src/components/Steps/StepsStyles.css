@@ -4,14 +4,23 @@
     background: rgba(0, 0, 0, .1);
     position: relative;
 }
-.footer .container {
+.data .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .title {
     text-align: center;
     margin-bottom: 20px;
+}
+.num{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 100%;
+    color: var(--primary-color);
+    margin: 10px 0 0;
+    text-align: left;
 }
 
 .image {

@@ -1,34 +1,21 @@
 import React from 'react'
-import './DataStyles.css'
+import './StepsStyles.css'
 import step1 from './../../assets/step1.svg'
 import step2 from './../../assets/step2.svg'
 import step3 from './../../assets/step3.svg'
 import step4 from './../../assets/step4.svg'
-import {styled} from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 
 
-const Item = styled(Paper)(({theme}) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
-
-const Data = () => {
+const Steps = () => {
     return (
         <div className='data'>
             <div className="container">
-                <h1 className='title'>4 кроки донора в центрі <span>служби крові</span></h1>
+                <h1 className='title'>4 кроки донора в центрі <span className='GreenSpan'>служби крові</span></h1>
                 <div className='row_content'>
                     <div className='row_step'>
                         <img className='image' src={step1} alt='step1'/>
-                        <p>1</p>
-                       <h4> <span>Запишись онлайн</span></h4>
+                        <p className='num'>1.</p>
+                        <h4><p>Запишись онлайн</p></h4>
                         <p className='txt'>
                             Не витрачай час на очікування в плазмацентрі, онлайн-запис на донацію триває
                             всього три хвилини! Введи свої контактні дані, обери плазмацентр та вкажи бажані
@@ -38,8 +25,8 @@ const Data = () => {
                     </div>
                     <div className='row_step'>
                         <img className='image' src={step2} alt='step2'/>
-                        <p>1</p>
-                       <h4><span>Пройди скрінінг</span></h4>
+                        <p className='num'>2.</p>
+                        <h4><p>Пройди скрінінг</p></h4>
                         <p className='txt'>
                             Не витрачай час на очікування в плазмацентрі, онлайн-запис на донацію триває
                             всього три хвилини! Введи свої контактні дані, обери плазмацентр та вкажи бажані
@@ -49,18 +36,18 @@ const Data = () => {
                     </div>
                     <div className='row_step'>
                         <img className='image' src={step3} alt='step3'/>
-                        <p>3.</p>
-                        <h4><span>Здай плазму</span></h4>
+                        <p className='num'>3.</p>
+                        <h4><p>Здай плазму</p></h4>
                         <p className='txt'>
                             Загалом, на кріслі донора ти проведеш приблизно 45 хвилин. За цей час твоя плазма
                             буде
                             відібрана із загальної маси крові, а червоні й білі тільця повернуті назад
                         </p>
-                    </div >
+                    </div>
                     <div className='row_step'>
                         <img className='image' src={step4} alt='step4'/>
-                        <p>4.</p>
-                        <h4><span>Отримай винагороду</span></h4>
+                        <p className='num'>4.</p>
+                        <h4><p>Отримай винагороду</p></h4>
                         <p className='txt'>
                             Будь-яка добра справа має бути віддячена. Наші донори отримують щедрі компенсації за
                             кожну донацію плазми
@@ -72,7 +59,7 @@ const Data = () => {
     )
 }
 
-export default Data
+export default Steps
 
 // <Box sx={{flexGrow: 1}}>
 // <Grid container
