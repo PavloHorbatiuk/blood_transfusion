@@ -15,7 +15,7 @@ const Steps = () => {
                     <div className='row_step'>
                         <img className='image' src={step1} alt='step1'/>
                         <p className='num'>1.</p>
-                        <h4><p>Запишись онлайн</p></h4>
+                        <h4>Запишись онлайн</h4>
                         <p className='txt'>
                             Не витрачай час на очікування в плазмацентрі, онлайн-запис на донацію триває
                             всього три хвилини! Введи свої контактні дані, обери плазмацентр та вкажи бажані
@@ -26,7 +26,7 @@ const Steps = () => {
                     <div className='row_step'>
                         <img className='image' src={step2} alt='step2'/>
                         <p className='num'>2.</p>
-                        <h4><p>Пройди скрінінг</p></h4>
+                        <h4 className='title'>Пройди скрінінг</h4>
                         <p className='txt'>
                             Не витрачай час на очікування в плазмацентрі, онлайн-запис на донацію триває
                             всього три хвилини! Введи свої контактні дані, обери плазмацентр та вкажи бажані
@@ -37,7 +37,7 @@ const Steps = () => {
                     <div className='row_step'>
                         <img className='image' src={step3} alt='step3'/>
                         <p className='num'>3.</p>
-                        <h4><p>Здай плазму</p></h4>
+                        <h4 className='title'>Здай плазму</h4>
                         <p className='txt'>
                             Загалом, на кріслі донора ти проведеш приблизно 45 хвилин. За цей час твоя плазма
                             буде
@@ -47,7 +47,7 @@ const Steps = () => {
                     <div className='row_step'>
                         <img className='image' src={step4} alt='step4'/>
                         <p className='num'>4.</p>
-                        <h4><p>Отримай винагороду</p></h4>
+                        <h4 className='title'>Отримай винагороду</h4>
                         <p className='txt'>
                             Будь-яка добра справа має бути віддячена. Наші донори отримують щедрі компенсації за
                             кожну донацію плазми

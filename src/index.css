@@ -18,8 +18,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -27,7 +27,7 @@ body {
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+        monospace;
 }
 
 ul {
@@ -45,7 +45,11 @@ p {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 100%;
+    color: rgb(174, 174, 178);
 }
 
 h2 {
@@ -61,7 +65,7 @@ h2 {
 
 h4 {
     font-weight: 600;
-    font-size: calc(24px + 0.390625vw);
+    font-size: 1.5rem;
     line-height: 1.938;
     color: #000;
     margin: 1.25rem 0 0;
@@ -70,7 +74,7 @@ h4 {
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -124,9 +128,11 @@ button:hover {
     line-height: 110%;
 }
 
+
+
 @media (max-width: 1023px) {
     h5 {
-        font-size: calc(1rem + 1vw);
+        font-size: 2rem;
         line-height: 110%;
     }
 
@@ -141,9 +147,15 @@ button:hover {
     }
 }
 
+@media (max-width: 1119px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
 @media (max-width: 575px) {
     h5 {
-        font-size: calc(1rem + 1vw);
+        font-size: 1.5rem;
         line-height: 110%;
     }
 
@@ -161,6 +173,10 @@ button:hover {
         font-size: 40px;
         line-height: 110%;
     }
+
+    h1 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 374px) {
@@ -174,6 +190,3 @@ button:hover {
         line-height: 110%;
     }
 }
-
-
-

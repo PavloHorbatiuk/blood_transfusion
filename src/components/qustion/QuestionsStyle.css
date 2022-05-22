@@ -1,0 +1,21 @@
+.questions {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(242, 242, 242);
+}
+
+.questions .container {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.questions .container .title-questions {
+  margin: 48px 0px 16px;
+  text-align: center;
+}
+
+.questions .container .topBtn {
+  margin-top: 20px;
+}
