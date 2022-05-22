@@ -49,23 +49,42 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3.125rem;
+    max-width: 750px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    color: rgb(244, 167, 0);
 
 }
 
 h4 {
     font-weight: 600;
     font-size: calc(24px + 0.390625vw);
-    line-height: 31px;
+    line-height: 1.938;
     color: #000;
-    margin: 20px 0 0;
+    margin: 1.25rem 0 0;
     white-space: normal;
 
 }
 
 h5 {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: bold;
+}
+
+.list-pilgi {
+    list-style-type: none;
+    text-align: left;
+    margin: 0.313rem;
+    padding: 0.313rem;
+}
+
+.list-pilgi:before {
+    font-size: 25px;
+    content: counter(item, disc) " ";
+    color: var(--primary-color);
 }
 
 .container {
@@ -91,17 +110,34 @@ button {
 }
 
 button:hover {
-    background-color:  #62d2a3;
+    background-color: #62d2a3;
     border: 1px solid #62d2a2;
 }
 
-@media screen and (max-width: 940px) {
-    h1 {
-        font-size: 2rem;
+.yelow-span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.688rem;
+    text-align: center;
+    color: rgb(244, 167, 0);
+    max-width: 750px;
+    line-height: 110%;
+}
+
+@media (max-width: 1023px) {
+    h5 {
+        font-size: calc(1rem + 1vw);
+        line-height: 110%;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 60px;
+        line-height: 110%;
+    }
+
+    .yelow-span {
+        font-size: 60px;
+        line-height: 110%;
     }
 }
 
@@ -110,16 +146,34 @@ button:hover {
         font-size: calc(1rem + 1vw);
         line-height: 110%;
     }
-}
 
-@media  (max-width: 1023px) {
-    h5 {
-        font-size:  calc(1rem + 1vw);
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .yelow-span {
+        font-size: 40px;
+        line-height: 110%
+    }
+
+    h2 {
+        font-size: 40px;
         line-height: 110%;
     }
 }
 
+@media (max-width: 374px) {
+    .yelow-span {
+        font-size: 30px;
+        line-height: 110%
+    }
 
+    h2 {
+        font-size: 26px;
+        line-height: 110%;
+    }
+}
 
 
 

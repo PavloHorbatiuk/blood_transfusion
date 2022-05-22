@@ -1,8 +1,8 @@
 import React from 'react'
 import './HeroStyles.css'
-import {Typography} from "@mui/material";
 import Box from '@mui/material/Box';
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+
 const Hero = () => {
     const navigate = useNavigate();
     const clickHandler = () => navigate('/contact')
@@ -11,11 +11,11 @@ const Hero = () => {
             <div className="container">
                 <div className="content">
                     <Box>
-                        <Typography variant='h5' color='white' textAlign='center'>КОМУНАЛЬНЕ ПІДПРИЄМСТВО</Typography>
-                        <Typography variant='h5' color='white' textAlign='center'> "РІВНЕНСЬКИЙ ОБЛАСНИЙ ЦЕНТР СЛУЖБИ
-                            КРОВІ"</Typography>
-                        <Typography variant='h5' color='white' textAlign='center'> РІВНЕНСЬКОЇ ОБЛАСНОЇ
-                            РАДИ</Typography>
+                        <h5 className='text-title'>КОМУНАЛЬНЕ ПІДПРИЄМСТВО</h5>
+                        <h5 className='text-title'> "РІВНЕНСЬКИЙ ОБЛАСНИЙ ЦЕНТР СЛУЖБИ
+                            КРОВІ"</h5>
+                        <h5 className='text-title'> РІВНЕНСЬКОЇ ОБЛАСНОЇ
+                            РАДИ</h5>
                         <div className='btn'>
                             <button onClick={clickHandler}>Зареєструватися</button>
                         </div>

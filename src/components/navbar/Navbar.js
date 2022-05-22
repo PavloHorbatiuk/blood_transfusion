@@ -15,12 +15,11 @@ const Navbar = () => {
                 <div className="logo">
                     <img src={image} alt='logo'/>
                 </div>
-
                 <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
-                    <li><Link to='/'>На головну</Link></li>
+                    <li><Link className="active-class" to='/'>На головну</Link></li>
                     <li><Link to='/info_donor'>Інформація донору</Link></li>
-                    <li><Link to='/cloud'>Діяльність</Link></li>
-                    <li><Link to='/contact'>Пільги донорам</Link></li>
+                    <li><Link to='/contacts'>Контакти</Link></li>
+                    <li><Link to='/pilgi'>Пільги донорам</Link></li>
                     <li><Link to='/links'>Корисні посилання</Link></li>
                 </ul>
                 <div className="hamburger" onClick={handleNav}>

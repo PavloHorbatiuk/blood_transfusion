@@ -1,17 +1,17 @@
 import React from 'react'
+import "./ProductionStyle.css"
 
-const InfoDonors = () => {
-
+const Production = () => {
 
     return (
-        <div className='info'>
+        <div className='production'>
             <div className="container">
                 <div className="content">
-
+                    test
                 </div>
             </div>
         </div>
     )
 }
 
-export default InfoDonors
+export default Production
