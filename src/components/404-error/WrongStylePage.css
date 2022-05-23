@@ -6,5 +6,37 @@
 .wrongPage .container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+}
+
+.num-four {
+  font-size: 184px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.btn-wrong {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.title404 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .num-four {
+    font-size: 120px;
+  }
+
+  .title404 {
+    font-size: 23px;
+  }
 }
