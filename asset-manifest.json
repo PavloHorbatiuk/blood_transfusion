@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blood_transfusion/static/css/main.cf918a33.css",
-    "main.js": "/blood_transfusion/static/js/main.67fe7b88.js",
+    "main.css": "/blood_transfusion/static/css/main.3b08e99e.css",
+    "main.js": "/blood_transfusion/static/js/main.54631ba9.js",
     "static/media/charity.jpg": "/blood_transfusion/static/media/charity.098f0ae2fdefa35e4905.jpg",
     "static/media/footer-bg.jpg": "/blood_transfusion/static/media/footer-bg.344c8ecaa109f0c5f90e.jpg",
     "static/media/docs.png": "/blood_transfusion/static/media/docs.30b6fa4e004a472c6c7b.png",
@@ -15,11 +15,11 @@
     "static/media/lens.svg": "/blood_transfusion/static/media/lens.327fe3e3811f07f7aed833fe89bbe197.svg",
     "static/media/ok.svg": "/blood_transfusion/static/media/ok.4fdf0e50e7f40a4859bf9632637b9e74.svg",
     "index.html": "/blood_transfusion/index.html",
-    "main.cf918a33.css.map": "/blood_transfusion/static/css/main.cf918a33.css.map",
-    "main.67fe7b88.js.map": "/blood_transfusion/static/js/main.67fe7b88.js.map"
+    "main.3b08e99e.css.map": "/blood_transfusion/static/css/main.3b08e99e.css.map",
+    "main.54631ba9.js.map": "/blood_transfusion/static/js/main.54631ba9.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf918a33.css",
-    "static/js/main.67fe7b88.js"
+    "static/css/main.3b08e99e.css",
+    "static/js/main.54631ba9.js"
   ]
 }
