@@ -2,9 +2,8 @@ import React from 'react';
 import './PilgiStyle.css';
 
 const Pilgi = () => {
-	
 	return (
-		<div className="info">
+		<div className="info" id="pilgi">
 			<div className="container">
 				<div className="text">
 					<h5>

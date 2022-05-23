@@ -55,7 +55,7 @@ export default function Questions() {
 	return (
 		<div className="questions">
 			<div className="container">
-				<div className='topBtn'>
+				<div className="topBtn">
 					<BackCross />
 				</div>
 
