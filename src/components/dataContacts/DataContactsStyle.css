@@ -1,0 +1,35 @@
+.data-contacts {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, .1);
+  padding: 24px 48px 24px;
+
+}
+
+.data-contacts .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.data-contacts .container .content{
+  padding: 1rem;
+}
+.data-contacts .container .content p {
+padding-top: 1rem;
+}
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* .data-contacts .container .content {
+  display: flex;
+  align-items: center;
+  border: 1px solid red
+} */

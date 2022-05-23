@@ -6,7 +6,7 @@ import { Routes, Route, HashRouter } from 'react-router-dom';
 
 import QuestionsPage from './routes/QuestionsPage';
 import WrongPage from './components/404-error/WrongPage';
-import Contact from './components/contact/Contact';
+import DataContacts from "./components/dataContacts/DataContacts";
 
 ReactDOM.render(
 	<HashRouter>
@@ -15,7 +15,7 @@ ReactDOM.render(
 			<Route path="/" element={<App />} />
 			<Route path="/*" element={<WrongPage />} />
 			<Route path="questions" element={<QuestionsPage />} />
-			<Route path="contact" element={<Contact />} />
+			<Route path="contacts" element={<DataContacts />} />
 		</Routes>
 	</HashRouter>,
 	document.getElementById('root')
