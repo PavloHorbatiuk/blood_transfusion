@@ -14,9 +14,9 @@ function WrongPage() {
 					<p>Cторінку було видалено системою, aбо</p>
 					<p> адресна строка містить помилки - перевірте чи</p>
 					<p>правильно ви ввели посилання</p>
-				</div>
-				<div className="btn-wrong">
-					<BackCross />
+					<div className="btn-wrong">
+						<BackCross />
+					</div>
 				</div>
 			</div>
 		</div>
