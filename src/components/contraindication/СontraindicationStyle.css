@@ -1,0 +1,24 @@
+.contraindication {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(242, 242, 242);
+}
+
+.contraindication .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container .two-col-arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 100%;
+}
+
+.cross {
+    justify-self: end;
+}

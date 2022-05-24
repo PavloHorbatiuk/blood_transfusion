@@ -2,19 +2,18 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: rgb(242, 242, 242);
-
+    background: rgba(0, 0, 0, .1);
     padding: 80px 48px 50px;
 }
 
-.freeAnalize:before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    inset: -2px 0px;
-    border-radius: 0px 193px 0px 0px;
-    background: rgba(0, 0, 0, .1);
-}
+/*.freeAnalize:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    z-index: 1;*/
+/*    inset: -2px 0px;*/
+/*    border-radius: 0px 193px 0px 0px;*/
+/*    background: rgba(0, 0, 0, .1);*/
+/*}*/
 
 
 .content .item {

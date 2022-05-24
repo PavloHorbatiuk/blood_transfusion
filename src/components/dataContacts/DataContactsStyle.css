@@ -14,12 +14,15 @@
   flex-direction: column;
 
 }
-.data-contacts .container .content{
+
+.data-contacts .container .content {
   padding: 1rem;
 }
+
 .data-contacts .container .content p {
-padding-top: 1rem;
+  padding-top: 1rem;
 }
+
 .text-left {
   text-align: left;
 }
@@ -27,9 +30,3 @@ padding-top: 1rem;
 .text-right {
   text-align: right;
 }
-
-/* .data-contacts .container .content {
-  display: flex;
-  align-items: center;
-  border: 1px solid red
-} */

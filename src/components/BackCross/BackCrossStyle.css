@@ -25,7 +25,7 @@
 }
 
 .backBtn:hover {
-    background-color: #e10b17;
+    background-color: var(--primary-color);
 }
 
 .backBtn .arrowBack {

@@ -2,7 +2,6 @@ import React from 'react';
 import './EasyToGive.css';
 import easySvg from './../../assets/veryeasy.svg';
 
-import { AiOutlineArrowDown } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 const EasyToGIve = () => {
