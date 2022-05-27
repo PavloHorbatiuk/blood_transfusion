@@ -4,6 +4,9 @@ import {useFormik} from 'formik';
 import {TextField} from "@mui/material";
 import close from './../../assets/close32.png'
 import {useNavigate} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+import {createDonorsTH} from "../../store/Donor-reducer";
+import SuccessPage from "../SuccessPage/SuccessPage";
 
 
 const regEx = /^(?:\+38)?(0(67|68|96|97|98)\d{7})$/
@@ -15,45 +18,49 @@ const regEx = /^(?:\+38)?(0(67|68|96|97|98)\d{7})$/
 
 const validate = values => {
     const errors = {};
-    if (!values.firstName) {
-        errors.firstName = 'Обов\'язкове поле';
-    } else if (values.firstName.length > 15) {
-        errors.firstName = 'Повинно бути не більше 15 символів';
-    } else if (values.firstName.length < 4) {
-        errors.firstName = "Мінімальна кількість символів 4"
+    if (!values.name) {
+        errors.name = 'Обов\'язкове поле';
+    } else if (values.name.length > 15) {
+        errors.name = 'Повинно бути не більше 15 символів';
+    } else if (values.name.length < 4) {
+        errors.name = "Мінімальна кількість символів 4"
     }
-    if (!values.lastName) {
-        errors.lastName = 'Обов\'язкове поле';
-    } else if (values.lastName.length > 20) {
-        errors.lastName = 'Повинно бути не більше 15 символів';
-    } else if (values.lastName.length < 4) {
-        errors.lastName = 'Мінімальна кількість символів 4'
+    if (!values.second_name) {
+        errors.second_name = 'Обов\'язкове поле';
+    } else if (values.second_name.length > 20) {
+        errors.second_name = 'Повинно бути не більше 15 символів';
+    } else if (values.second_name.length < 4) {
+        errors.second_name = 'Мінімальна кількість символів 4'
     }
 
-    if (!values.phoneNumber) {
-        debugger
-        errors.phoneNumber = 'Обов\'язкове поле';
-    } else if (!regEx.test(values.phoneNumber)) {
-        debugger
-        errors.phoneNumber = 'Невірно вказаний номер';
-        debugger
+    if (!values.phone_number) {
+        errors.phone_number = 'Обов\'язкове поле';
+    } else if (!regEx.test(values.phone_number)) {
+        errors.phone_number = 'Невірно вказаний номер';
     }
 
     return errors;
 };
 const Contact = () => {
     const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const isDonor = useSelector(state => state.donors.isDonor)
     const formik = useFormik({
         initialValues: {
-            firstName: '',
-            lastName: '',
-            phoneNumber: "+380",
+            name: '',
+            second_name: '',
+            phone_number: "+380",
         },
         validate,
         onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
-        },
+            dispatch(createDonorsTH(JSON.stringify(values)))
+        }
+
     });
+
+    if (isDonor) {
+        return <SuccessPage/>
+    }
     const clickHandler = () => navigate('/')
     return (
         <div className='contact'>
@@ -68,38 +75,38 @@ const Contact = () => {
                             sx={{margin: "20px"}}
                             variant='standard'
                             label="Ваше ім'я"
-                            id="firstName"
-                            name="firstName"
+                            id="name"
+                            name="name"
                             type="text"
                             onChange={formik.handleChange}
-                            value={formik.values.firstName}
+                            value={formik.values.name}
                         />
-                        {formik.touched.firstName && formik.errors.firstName ?
-                            <div className='error'>{formik.errors.firstName}</div> : null}
+                        {formik.touched.name && formik.errors.name ?
+                            <div className='error'>{formik.errors.name}</div> : null}
                         <TextField
                             sx={{margin: "20px"}}
                             variant='standard'
                             label="Ваше прізвіще"
-                            id="lastName"
-                            name="lastName"
+                            id="second_name"
+                            name="second_name"
                             type="text"
                             onChange={formik.handleChange}
-                            value={formik.values.lastName}
+                            value={formik.values.second_name}
                         />
-                        {formik.touched.lastName && formik.errors.lastName ?
-                            <div className='error'>{formik.errors.lastName}</div> : null}
+                        {formik.touched.second_name && formik.errors.second_name ?
+                            <div className='error'>{formik.errors.second_name}</div> : null}
                         <TextField
                             sx={{margin: "20px"}}
                             variant='standard'
                             label="Ваш номер телефону"
-                            id="phoneNumber"
-                            name="phoneNumber"
+                            id="phone_number"
+                            name="phone_number"
                             type="tel" pattern={regEx} required
                             onChange={formik.handleChange}
-                            value={formik.values.phoneNumber}
+                            value={formik.values.phone_number}
                         />
-                        {formik.touched.phoneNumber && formik.errors.phoneNumber ?
-                            <div className='error'>{formik.errors.phoneNumber}</div> : null}
+                        {formik.touched.phone_number && formik.errors.phone_number ?
+                            <div className='error'>{formik.errors.phone_number}</div> : null}
                         <div className='btnSubmit'>
                             <button className='btn-col' type="submit">< span className="btnTitle">Відправити</span>
                             </button>

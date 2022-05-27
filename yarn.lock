@@ -7563,6 +7563,11 @@
     "history" "^5.2.0"
     "react-router" "6.3.0"
 
+"react-router-redux@^4.0.8":
+  "integrity" "sha1-InQDWWtRUeGCN32rg1tdRfD4BU4="
+  "resolved" "https://registry.npmjs.org/react-router-redux/-/react-router-redux-4.0.8.tgz"
+  "version" "4.0.8"
+
 "react-router@6.3.0":
   "integrity" "sha512-7Wh1DzVQ+tlFjkeo+ujvjSqSJmkt1+8JO+T5xklPlgrh70y7ogx75ODRW0ThWhY7S+6yEDks8TYrtQe/aoboBQ=="
   "resolved" "https://registry.npmjs.org/react-router/-/react-router-6.3.0.tgz"

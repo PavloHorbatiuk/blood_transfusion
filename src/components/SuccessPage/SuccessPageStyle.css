@@ -1,0 +1,19 @@
+.success {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff
+}
+
+.success .container {
+    display: flex;
+    justify-content: center;
+}
+.success .container div {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin:1rem
+}
+.imgSuccess{
+    max-height: 300px;
+}

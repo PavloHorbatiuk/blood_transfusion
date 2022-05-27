@@ -16,9 +16,9 @@ const Hero = () => {
                             КРОВІ"</h5>
                         <h5 className='text-title'> РІВНЕНСЬКОЇ ОБЛАСНОЇ
                             РАДИ</h5>
-                        <div className='btn'>
-                            <button onClick={clickHandler}>Зареєструватися</button>
-                        </div>
+                        {/*<div className='btn'>*/}
+                        {/*    <button onClick={clickHandler}>Зареєструватися</button>*/}
+                        {/*</div>*/}
                     </Box>
                 </div>
             </div>
