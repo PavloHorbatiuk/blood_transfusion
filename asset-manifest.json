@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blood_transfusion/static/css/main.c57f48a2.css",
-    "main.js": "/blood_transfusion/static/js/main.202b5be4.js",
+    "main.css": "/blood_transfusion/static/css/main.42b11e1b.css",
+    "main.js": "/blood_transfusion/static/js/main.328e8705.js",
     "static/media/charity.jpg": "/blood_transfusion/static/media/charity.098f0ae2fdefa35e4905.jpg",
     "static/media/footer-bg.jpg": "/blood_transfusion/static/media/footer-bg.344c8ecaa109f0c5f90e.jpg",
     "static/media/docs.png": "/blood_transfusion/static/media/docs.30b6fa4e004a472c6c7b.png",
@@ -11,15 +11,16 @@
     "static/media/step4.svg": "/blood_transfusion/static/media/step4.8c97d817cff99fdbb524ae120ade20d8.svg",
     "static/media/step1.svg": "/blood_transfusion/static/media/step1.db889e9af879f4236ee6f7f4e7f94c38.svg",
     "static/media/lable.png": "/blood_transfusion/static/media/lable.9d4f96cbf4e5293a9211.png",
+    "static/media/kapelnica.svg": "/blood_transfusion/static/media/kapelnica.b7cdd1503f27e61097bae11861c9aca3.svg",
     "static/media/desis.svg": "/blood_transfusion/static/media/desis.c3d3698de19ffc29b9f0e9b5f24fbbf9.svg",
     "static/media/lens.svg": "/blood_transfusion/static/media/lens.327fe3e3811f07f7aed833fe89bbe197.svg",
     "static/media/ok.svg": "/blood_transfusion/static/media/ok.4fdf0e50e7f40a4859bf9632637b9e74.svg",
     "index.html": "/blood_transfusion/index.html",
-    "main.c57f48a2.css.map": "/blood_transfusion/static/css/main.c57f48a2.css.map",
-    "main.202b5be4.js.map": "/blood_transfusion/static/js/main.202b5be4.js.map"
+    "main.42b11e1b.css.map": "/blood_transfusion/static/css/main.42b11e1b.css.map",
+    "main.328e8705.js.map": "/blood_transfusion/static/js/main.328e8705.js.map"
   },
   "entrypoints": [
-    "static/css/main.c57f48a2.css",
-    "static/js/main.202b5be4.js"
+    "static/css/main.42b11e1b.css",
+    "static/js/main.328e8705.js"
   ]
 }
