@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const instance = axios.create({
     // withCredentials: true,
-    baseURL: `http://localhost:7000/donors/`,
+    baseURL: `https://blood-transfusion.herokuapp.com/donors/`,
 });
 export const authAPI = {
     getAll() {
